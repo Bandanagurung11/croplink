@@ -1,73 +1,60 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-.container {
-    margin-top: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url(1688052928402.jpg);
-   background-color: rgba(0,0,0,0.5);
-   background-size: cover;
-    background-blend-mode: multiply;
-    background-position: center;
-    background-repeat: no-repeat;
+body {
+  background-image: url(images/1688052928402.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.main {
+  text-align: center;
+  font-size: 100px;
+  font-family: "Cormorant Infant", serif;
+  font-weight: bold;
+  font-family: "Cormorant Infant", serif;
+  margin-top: 8%;
+  /* padding: 2%; */
+  opacity: 75%;
+  color: rgb(153, 55, 153);
+}
+#linebreak {
+  display: block;
+  margin-bottom: 6em;
 }
 
-.btn {
-    height: 100%;
-    width: 33.33%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:center ;
-    /*margin-top: 10%;*/
+#Farmerbutton {
+  align-items: center;
+  background-color: transparent;
+  font-size: 90px;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 20%;
+  color: rgb(153, 55, 153);
+  margin-left: 15%;
 }
-button {
-    margin-top: 35%;
-    --glow-color: rgb(217, 176, 255);
-    --glow-spread-color: rgba(191, 123, 255, 0.781);
-    --enhanced-glow-color: rgb(231, 206, 255);
-    --btn-color: rgb(100, 61, 136);
-    border: .25em solid var(--glow-color);
-    padding: 1em 3em;
-    color: var(--glow-color);
-    font-size: 15px;
-    font-weight: bold;
-    background-color: var(--btn-color);
-    border-radius: 1em;
-    outline: none;
-    box-shadow: 0 0 1em .25em var(--glow-color),
-           0 0 4em 1em var(--glow-spread-color),
-           inset 0 0 .75em .25em var(--glow-color);
-    text-shadow: 0 0 .5em var(--glow-color);
-    position: relative;
-    transition: all 0.3s;
-   }
-   
-   button::after {
-    pointer-events: none;
-    content: "";
-    position: absolute;
-    top: 120%;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--glow-spread-color);
-    filter: blur(2em);
-    opacity: .7;
-    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
-   }
-   
-   button:hover {
-    color: var(--btn-color);
-    background-color: var(--glow-color);
-    box-shadow: 0 0 1em .25em var(--glow-color),
-           0 0 4em 2em var(--glow-spread-color),
-           inset 0 0 .75em .25em var(--glow-color);
-   }
-   
-   button:active {
-    box-shadow: 0 0 0.6em .25em var(--glow-color),
-           0 0 2.5em 2em var(--glow-spread-color),
-           inset 0 0 .5em .25em var(--glow-color);
-   }
+
+#Buyerbutton {
+  align-items: center;
+  background-color: transparent;
+  font-size: 90px;
+  margin-left: 10%;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 20%;
+  color: rgb(153, 55, 153);
+}
+
+#link {
+  color: rgb(153, 55, 153);
+  text-decoration: none;
+}
+
+#link:hover {
+  color: rgb(155, 248, 4);
+  border-radius: 20%;
+  border-style: outset;
+  border-color: rgb(155, 248, 4);
+  font-weight: bolder;
+  border-width: 4px;
+}

@@ -5,7 +5,7 @@
 .main {
   height: 100%;
   width: 100%;
-  background-image: url(pct2.jpg);
+  background-image: url(images/pct2.jpg);
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);
   /*background-blend-mode: multiply;*/

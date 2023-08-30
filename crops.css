@@ -106,33 +106,41 @@ ul li a {
   white-space: nowrap;
   width: auto;
 }
-/*.my-animation {
-  animation: my-animation 5s ease-in-out infinite;
-}
-@keyframes my-animation {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}*/
-.product {
-  height: 100%;
-  width: 100%;
-  </*background-color: aquamarine;*/
-}
-.first {
+.container {
   display: flex;
-  height: 20%;
-  width: 30%;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between; /* Distributes items evenly with space between them */
+}
+
+.row {
+  display: flex;
+  /*flex-wrap: wrap;*/
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 100%; /* Ensures the row occupies the full width of the container */
+}
+
+.product {
+  width: calc(
+    18% - 0px
+  ); /* Adjust the width of each product based on the number of products per row */
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-right: 0%;
+}
+
+.product img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.product h3 {
+  margin-top: 10px;
+}
+
+.product p {
+  margin: 5px 0;
 }

@@ -2,19 +2,7 @@
   padding: 0;
   margin: 0;
 }
-#togglePassword {
-  cursor: pointer;
-}
-.main {
-  height: 100%;
-  width: 100%;
-  background-image: url(images/1687587948824.jpg);
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.5);
-  /*background-blend-mode: multiply;*/
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
 .background {
   width: 430px;
   height: 480px;
@@ -23,7 +11,6 @@
   left: 50%;
   top: 50%;
 }
-
 .background .shape {
   height: 200px;
   width: 200px;
@@ -32,18 +19,18 @@
 }
 .shape:first-child {
   background: linear-gradient(#1845ad, #23a2f6);
-  left: -80px;
-  top: -80px;
+  left: -112px;
+  top: -50;
 }
 .shape:last-child {
   background: linear-gradient(to right, #ff512f, #f09819);
   right: -90px;
-  bottom: -40px;
+  bottom: -700px;
 }
 form {
-  height: 80%;
+  margin-top: 340;
   width: 400px;
-  background-color: rgba(255, 255, 255, 0.13);
+  background-color: rgba(67, 80, 224, 0.737);
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -91,33 +78,16 @@ input:focus {
 }
 
 ::placeholder {
-  color: white;
+  color: #e5e5e5;
 }
-/*.input-container {
-  position: relative;
-  display: inline-block;
-}
-
-input[type="password"] {
-  display: block;
-  height: 50px;
+#present_address {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.07);
-  border-radius: 3px;
-  padding: 0 10px;
-  margin-top: 8px;
-  font-size: 14px;
-  font-weight: 300;
+  background-color: rgba(146, 153, 234, 0.737);
 }
-
- Styling for the eye icon 
-#togglePassword {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  cursor: pointer;
-}*/
+#present_address:focus {
+  border-color: #020d19;
+  box-shadow: 0 0 5px #1d1e1f;
+}
 button {
   margin-top: 50px;
   width: 100%;
@@ -128,39 +98,4 @@ button {
   font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.social {
-  margin-top: 30px;
-  display: flex;
-}
-.social .go {
-  background: red;
-  width: 150px;
-  border-radius: 3px;
-  padding: 5px 10px 10px 5px;
-  background-color: rgba(255, 255, 255, 0.27);
-  color: #eaf0fb;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-}
-.social .fb {
-  background: red;
-  width: 150px;
-  border-radius: 3px;
-  padding: 5px 10px 10px 5px;
-  background-color: rgba(255, 255, 255, 0.27);
-  color: #eaf0fb;
-  text-align: center;
-}
-
-.social div:hover {
-  background-color: rgba(255, 255, 255, 0.47);
-}
-.social .fb {
-  margin-left: 25px;
-}
-.social i {
-  margin-right: 4px;
 }
